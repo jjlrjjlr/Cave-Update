@@ -1,8 +1,12 @@
 package jjlr.caveupdate;
 
+import jjlr.caveupdate.proxies.commonproxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = references.MODID, name = references.NAME, version = references.VERSION)
 public class caveUpdateMain {
@@ -12,14 +16,14 @@ public class caveUpdateMain {
 	
 	/*
 	 * Used to setup client and common proxy.
-	 * 
+	 */
 	@SidedProxy(clientSide = references.CLIENT_PROXY, serverSide = references.COMMON_PROXY)
-	public static commonProxy proxy;
-	*/
+	public static commonproxy proxy;
+
 	
 	/*
 	 * Used to register items.
-	 * 
+	 *
 	@Mod.EventBusSubscriber
 	public static class RegistrationHandler{
 		
@@ -37,28 +41,25 @@ public class caveUpdateMain {
 	
 	/*
 	 * Forge preInititialization.
-	 * 
+	 */
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		System.out.println(references.NAME + " is starting...");
 	}
-	*/
 	
 	/*
 	 * Forge Initialization.
-	 *
+	 */
 	@Mod.EventHandler
 	public void Init(FMLInitializationEvent event) {
 		
 	}
-	*/
 	
 	/*
 	 * Forge PostInitialization.
-	 * 
+	 */
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		System.out.println(references.NAME + " started successfully...");
 	}
-	*/
 }
