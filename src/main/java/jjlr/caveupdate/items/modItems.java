@@ -7,18 +7,18 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 public class modItems {
 	
-public static basicItem exampleItem = new basicItem("example_item", references.MODID).setCreativeTab(CreativeTabs.MATERIALS);
+public static basicItem nautilusFossil = new basicItem("nautilus_fossil", references.MODID).setCreativeTab(CreativeTabs.MATERIALS);
 	
 	public static void register(IForgeRegistry<Item> registry) {
 		registry.registerAll(
 				
-				exampleItem
+				nautilusFossil
 		);
 	}
 	
 	public static void registerModels() {
 		
-		exampleItem.registerItemModel();
+		nautilusFossil.registerItemModel();
 	}
 
 }
