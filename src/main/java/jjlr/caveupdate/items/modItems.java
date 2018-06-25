@@ -12,13 +12,13 @@ public static basicItem exampleItem = new basicItem("example_item", references.M
 	public static void register(IForgeRegistry<Item> registry) {
 		registry.registerAll(
 				
-				//exampleItem
+				exampleItem
 		);
 	}
 	
 	public static void registerModels() {
 		
-		//exampleItem.registerItemModel();
+		exampleItem.registerItemModel();
 	}
 
 }

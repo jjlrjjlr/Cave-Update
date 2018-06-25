@@ -1,6 +1,10 @@
 package jjlr.caveupdate;
 
+import jjlr.caveupdate.items.modItems;
 import jjlr.caveupdate.proxies.commonproxy;
+import net.minecraft.item.Item;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -30,12 +34,12 @@ public class caveUpdateMain {
 		
 		@SubscribeEvent
 		public static void registerItems(RegistryEvent.Register<Item> event) {
-			ModItems.register(event.getRegistry());
+			modItems.register(event.getRegistry());
 		}
 		
 		@SubscribeEvent
 		public static void registerItem(ModelRegistryEvent event) {
-			ModItems.registerModels();
+			modItems.registerModels();
 		}
 	}
 	
