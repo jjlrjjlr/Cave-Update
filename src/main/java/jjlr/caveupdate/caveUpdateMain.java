@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod(modid = references.MODID, name = references.NAME, version = references.VERSION)
 public class caveUpdateMain {
@@ -23,7 +24,7 @@ public class caveUpdateMain {
 	
 	/*
 	 * Used to register items.
-	 *
+	 */
 	@Mod.EventBusSubscriber
 	public static class RegistrationHandler{
 		
@@ -37,7 +38,7 @@ public class caveUpdateMain {
 			ModItems.registerModels();
 		}
 	}
-	*/
+	
 	
 	/*
 	 * Forge preInititialization.
