@@ -4,8 +4,9 @@ import jjlr.caveupdate.references;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraft.util.ResourceLocation;
 
-public class clientproxy {
+public class clientproxy extends commonproxy {
 
 	/*
 	 * Used to render items in game.
